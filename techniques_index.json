@@ -1,0 +1,315 @@
+{
+  "version": "2.0",
+  "last_updated": "2026-06-26",
+  "section_title": "Code Hyperlinks",
+  "section_subtitle": "How the Code connects — 16 relationship types",
+  "note": "Each entry: label, sub-label, target module key, elementId. Renderer calls startOAt(module, elementId) on tap. All module keys and elementIds verified against ppc_navigator_v82.html.",
+  "techniques": [
+    {
+      "id": "PREREQ",
+      "title": "Prerequisite",
+      "icon": "🔑",
+      "color": "#2c5f2e",
+      "desc": "Section A must be established before Section B can fire. Attack prerequisites to collapse dependent charges.",
+      "entries": [
+        { "label": "S.141 Unlawful Assembly must be proven before S.149 Common Object fires", "sub": "Defeat the assembly threshold and S.149 collapses entirely — attack headcount or common object", "module": "TRANQUILLITY", "elementId": "S141_142" },
+        { "label": "Abetment mode (S.107) must be identified before S.109–S.120 punishment rules apply", "sub": "Instigation, Conspiracy, or Aid — establish one mode first; extensions follow the mode", "module": "ABETMENT", "elementId": "Ins" },
+        { "label": "S.299 Qatl definitions prerequisite for every S.302–S.338 conviction", "sub": "The entire Qatl/Qisas framework runs on S.299 vocabulary — the starting point for everything", "module": "QATLCORE", "elementId": "S301" },
+        { "label": "Prior concert (meeting of minds) prerequisite for S.34 Common Intention", "sub": "Without pre-arranged shared intention, S.34 fails — the most frequently missed prerequisite", "module": "CI", "elementId": "CI" },
+        { "label": "Actus reus + mens rea both prerequisite simultaneously for any criminal offence", "sub": "S.6 reading rules require both to be established — neither alone is sufficient", "module": "ACTUS", "elementId": "AR" },
+        { "label": "S.378 Theft or S.383 Extortion prerequisite for S.390 Robbery", "sub": "Robbery cannot be charged unless the underlying theft or extortion is first made out", "module": "ROBBERY", "elementId": "T∨E" },
+        { "label": "General Exceptions (S.76–S.106) prerequisite reading before any specific offence", "sub": "S.6 makes every offence definition subject to GE by operation of law — GE reads before everything", "module": "GE", "elementId": "¬MF" },
+        { "label": "S.305 Wali definition prerequisite for any Qisas claim", "sub": "Qisas is a personal right of the heirs — establish who the wali is before the right can be exercised", "module": "QATLCORE", "elementId": "S305" },
+        { "label": "S.415 Cheating definition prerequisite for S.417–S.420 punishment provisions", "sub": "Punishment sections assume the base definition is made out — always prove S.415 first", "module": "CHEATING", "elementId": "S415" },
+        { "label": "S.463 Forgery definition prerequisite for S.465–S.477 all aggravated forms", "sub": "Making a false document (S.464) is the root; every aggravated variant requires it first", "module": "FORGERY", "elementId": "S463" },
+        { "label": "S.340 Wrongful Confinement prerequisite for S.343–S.348 aggravated variants", "sub": "Base confinement must be established before duration or purpose aggravations apply", "module": "WRESTRAINT", "elementId": "WConf" },
+        { "label": "Stages of crime must proceed in order: intention → preparation → attempt", "sub": "S.511 attempt requires prior preparation; preparation requires prior intention — sequence is fixed", "module": "STAGES", "elementId": "St1" },
+        { "label": "S.503 Criminal Intimidation definition prerequisite for S.506 punishment", "sub": "The threat must satisfy S.503's definition before punishment provisions engage", "module": "INTIMIDATION", "elementId": "S503" },
+        { "label": "S.425 Mischief definition prerequisite for S.426–S.440 all variants", "sub": "Every mischief offence traces back to S.425's foundational definition — start there", "module": "MISCHIEF", "elementId": "S425" }
+      ]
+    },
+    {
+      "id": "CONJUNCT",
+      "title": "Conjunction",
+      "icon": "∧",
+      "color": "#3a5a1a",
+      "desc": "All elements must be present simultaneously. Unlike Prerequisite (sequential), Conjunction requires A AND B AND C at the same moment.",
+      "entries": [
+        { "label": "S.141: 5+ persons AND one qualifying common object — both simultaneously", "sub": "Neither element alone constitutes unlawful assembly; both must coexist", "module": "TRANQUILLITY", "elementId": "S141_142" },
+        { "label": "S.34: 2+ persons AND prior concert AND act in furtherance — all three at once", "sub": "Common Intention is a three-element conjunction; any missing element is fatal to the charge", "module": "CI", "elementId": "CI" },
+        { "label": "S.300 Murder: actus reus (death caused) AND niyyat (S.300 intention) — concurrent", "sub": "Both must coexist at the moment of the act; post-hoc intention or accidental death fails", "module": "MURDER", "elementId": "Niyyat" },
+        { "label": "S.390 Robbery: (theft or extortion) AND force/fear AND same transaction", "sub": "The force must accompany the theft — a gap in time breaks the conjunction", "module": "ROBBERY", "elementId": "T∨E" },
+        { "label": "S.465 Forgery: false document AND fraudulent or dishonest intention — both required", "sub": "A false document without the requisite mental state is not forgery under the section", "module": "FORGERY", "elementId": "S465" },
+        { "label": "S.120-A Conspiracy: agreement AND illegal object — two concurrent requirements", "sub": "The agreement must be for an illegal purpose; one without the other is insufficient", "module": "CC", "elementId": "Agr" },
+        { "label": "S.375 Rape: sexual act AND absence of consent — must coexist at the same moment", "sub": "Consent given before or after, but not at the time, does not satisfy the conjunction", "module": "RAPE", "elementId": "rc1" },
+        { "label": "S.499 Defamation: statement AND injury to reputation AND publication to a third party", "sub": "All three elements must be present — a true statement not published to others is not defamation", "module": "DEFAMATION", "elementId": "S499" },
+        { "label": "S.415 Cheating: deception AND inducement AND resulting delivery or act/omission", "sub": "The deception must cause the inducement which must cause the consequence — a three-link chain", "module": "CHEATING", "elementId": "S415" },
+        { "label": "S.503 Criminal Intimidation: threat AND intention that the victim be alarmed", "sub": "A threat without the intention to alarm, or alarm without a qualifying threat, fails the section", "module": "INTIMIDATION", "elementId": "S503" }
+      ]
+    },
+    {
+      "id": "DERIV",
+      "title": "Derivative Liability",
+      "icon": "↪",
+      "color": "#6b2d3e",
+      "desc": "Liability inherited from another section. The accused is guilty of X because they participated in Y — not because they personally did X.",
+      "entries": [
+        { "label": "S.110–S.114: abettor's punishment derives entirely from the offence abetted", "sub": "All Schedule II flags — cognizability, bail, compoundability — inherit from the underlying offence", "module": "ABETMENT", "elementId": "S110" },
+        { "label": "S.149 Common Object: every assembly member guilty of the offence committed by any member", "sub": "Personal intention is irrelevant — membership + trigger = derived liability for the group", "module": "COMMONOBJ", "elementId": "CO_Rule" },
+        { "label": "S.34 Common Intention: the act of one is the act of all where prior concert is established", "sub": "Each co-accused is vicariously liable for every act done in furtherance of the shared intention", "module": "CI", "elementId": "Fur" },
+        { "label": "S.511 Attempt: punishment derived from the completed offence (half the maximum)", "sub": "You are sentenced for what you tried to do — the completed offence's regime governs", "module": "STAGES", "elementId": "St4" },
+        { "label": "S.396 Murder in Dacoity: all five+ participants liable for killing by any one", "sub": "You need not personally kill; participation in the dacoity derives the murder liability", "module": "ROBBERY", "elementId": "S392" },
+        { "label": "S.460 Lurking house-trespass by night: Qatl/hurt by any one = all jointly liable", "sub": "Group presence at night amplifies derived liability to the most serious outcome", "module": "TRESPASS", "elementId": "S459_460" },
+        { "label": "S.120-B(1) Conspiracy: punishment derived from the object offence", "sub": "Where the object offence carries death/life/2yr+, conspiracy liability mirrors that level", "module": "CC", "elementId": "Agr" },
+        { "label": "S.150 Hiring persons for unlawful assembly: liability flows from the assembly offence", "sub": "The hirer stands in the shoes of the assembly — Schedule II flags are inherited", "module": "TRANQUILLITY", "elementId": "S150_151" },
+        { "label": "S.414 Assisting in disposal of stolen property: liability derives from the primary theft", "sub": "An accessory after the fact — the principal offence determines the exposure", "module": "RECEIVING", "elementId": "S414" }
+      ]
+    },
+    {
+      "id": "DISJUNCT",
+      "title": "Disjunctive Choice",
+      "icon": "∨",
+      "color": "#1a5c52",
+      "desc": "Any ONE of multiple triggers is sufficient. Defence must defeat ALL limbs. Prosecution need only prove one.",
+      "entries": [
+        { "label": "S.107 Abetment: Instigation OR Conspiracy OR Intentional Aid — any one suffices", "sub": "Three independent modes; proving any single one makes the accused an abettor", "module": "ABETMENT", "elementId": "Ins" },
+        { "label": "S.141 Unlawful Assembly: any ONE of five common objects constitutes it", "sub": "Overawing government / resisting law / mischief / taking property / compelling — one is enough", "module": "TRANQUILLITY", "elementId": "S143_145" },
+        { "label": "S.149 Two limbs: 'in prosecution of common object' OR 'members knew likely'", "sub": "Limb 2 (knew likely) is the broader and more frequently litigated; either alone is sufficient", "module": "COMMONOBJ", "elementId": "CO_Limb1" },
+        { "label": "S.300 Murder: any ONE of four clauses suffices (intention to kill / GH likely / imminently dangerous etc.)", "sub": "Four independent routes to qatl-i-amd; each can be charged and proved in the alternative", "module": "MURDER", "elementId": "Niyyat" },
+        { "label": "S.375 Rape: consent vitiated by any ONE of multiple circumstances", "sub": "Force / fear / intoxication / unsound mind / deception / minority — any one vitiates consent", "module": "RAPE", "elementId": "rc1" },
+        { "label": "S.390 Robbery: underlying offence is theft OR extortion — disjunctive foundation", "sub": "Two independent routes to robbery; the charge succeeds if either underlying offence is proved", "module": "ROBBERY", "elementId": "T∨E" },
+        { "label": "General Exceptions: any ONE applicable exception fully negates liability", "sub": "Prosecution must disprove every raised exception; defence need only establish one", "module": "GE", "elementId": "¬MF" },
+        { "label": "S.499 Defamation: any ONE of ten exceptions defeats the charge", "sub": "Truth for public good / fair comment / judicial proceedings / and seven more — one is enough", "module": "DEFAMATION", "elementId": "S499_Exc1to3" },
+        { "label": "Private Defence: body OR property — either right available independently", "sub": "Both rights operate separately with their own scope and limits under S.100–S.106", "module": "GE", "elementId": "¬PDBody" },
+        { "label": "S.415 Cheating: inducing delivery of property OR inducing to do/omit an act", "sub": "Two independent limbs; property delivery and act/omission are separate routes to the offence", "module": "CHEATING", "elementId": "S415" }
+      ]
+    },
+    {
+      "id": "BRANCH",
+      "title": "Branching",
+      "icon": "⑂",
+      "color": "#5a3a8a",
+      "desc": "One entry point splits into multiple independent tracks. Each branch has its own rules, elements, and outcomes.",
+      "entries": [
+        { "label": "S.107 Abetment: one entry point → three independent mode branches (Ins / Cons / Aid)", "sub": "Each mode is a fully independent branch with its own elements — they share only the abetment label", "module": "ABETMENT", "elementId": "Ins" },
+        { "label": "General Exceptions: one chapter → twelve independent exception category branches", "sub": "Mistake / Judicial Acts / Accident / Necessity / Infancy / Insanity / Intoxication / Consent / GF / Trifling / Private Defence", "module": "GE", "elementId": "¬MF" },
+        { "label": "Blasphemy module: one entry → S.295 (objects) / S.295-B (Quran) / S.295-C (Prophet) branches", "sub": "Three branches with different actus reus, mens rea, and punishment regimes", "module": "BLASPHEMY", "elementId": "Act295" },
+        { "label": "Qatl: one entry → four independent variant branches (Amd / Shibh-i-Amd / Khata / Bis-Sabab)", "sub": "Each branch has its own punishment regime, Qisas eligibility, and Diyat calculation", "module": "QATLCORE", "elementId": "S301" },
+        { "label": "S.141 Unlawful Assembly: one section → five qualifying common object branches", "sub": "Each of the five objects is a separate branch with its own factual matrix", "module": "TRANQUILLITY", "elementId": "S143_145" },
+        { "label": "S.300 Murder: one section → four clause branches (cl.1 through cl.4)", "sub": "Four fully independent routes to murder; each branch has its own mental state requirement", "module": "MURDER", "elementId": "Niyyat" },
+        { "label": "Private Defence: one right → two branches (body / property) with independent scope", "sub": "S.100–S.102 govern the body branch; S.103–S.105 govern property — separate rules apply", "module": "GE", "elementId": "¬PDBody" },
+        { "label": "Punishment (S.53): one framework → five type branches (death / imprisonment / fine / Qisas / Diyat)", "sub": "Each branch has its own sentencing rules, commutation regime, and court jurisdiction", "module": "PUNISH", "elementId": "¬S53PUN" },
+        { "label": "Stages of crime: one act → four stage branches (intention / preparation / attempt / commission)", "sub": "The law intervenes differently at each stage; the branch determines the charge", "module": "STAGES", "elementId": "St1" },
+        { "label": "S.499 Defamation: one base offence → ten independent exception branches", "sub": "Each exception is a fully independent defence with its own elements and burden", "module": "DEFAMATION", "elementId": "S499_Exc1to3" }
+      ]
+    },
+    {
+      "id": "COMPARE",
+      "title": "Comparative Pair",
+      "icon": "↔",
+      "color": "#4a3a7a",
+      "desc": "Sections that must be understood against each other. Exam questions almost always test your ability to distinguish these.",
+      "entries": [
+        { "label": "S.34 Common Intention vs S.149 Common Object — the most-tested pairing in the Code", "sub": "Headcount / prior concert / scope of liability / evidentiary burden — four structural differences", "module": "COMMONOBJ", "elementId": "CO_Compare" },
+        { "label": "Qatl-i-Amd vs Qatl Shibh-i-Amd: intention vs near-intention", "sub": "Shibh-i-Amd: intends the act but a reasonable person would not expect death — the crucial gap", "module": "QATLCORE", "elementId": "S318_320" },
+        { "label": "Qatl-i-Amd vs Qatl-i-Khata: intention vs mistake", "sub": "Amd = intended to cause death; Khata = no intention to harm this particular person at all", "module": "QATLCORE", "elementId": "S321_322" },
+        { "label": "Qisas regime vs Ta'zir regime: private right vs State punishment", "sub": "Qisas belongs to the wali and can be waived; Ta'zir belongs to the State and cannot", "module": "MURDER", "elementId": "cl2" },
+        { "label": "Wrongful Restraint (S.339) vs Wrongful Confinement (S.340): partial vs total restriction", "sub": "Restraint prevents movement in a direction; confinement restricts movement in all directions", "module": "WRESTRAINT", "elementId": "WRest" },
+        { "label": "Robbery vs Dacoity: five-person threshold changes the entire offence category", "sub": "Dacoity = robbery by five or more; the headcount transforms punishment and cognizability", "module": "ROBBERY", "elementId": "¬Ex" },
+        { "label": "Dishonest vs Fraudulent: the two mental state concepts anchoring all property offences", "sub": "Dishonest = wrongful gain/loss in property; Fraudulent = deception. Not interchangeable.", "module": "GEXPL", "elementId": "¬S26RTB" },
+        { "label": "Forgery (S.463) vs Cheating (S.415): document-based vs person-based deception", "sub": "Forgery operates through false documents; cheating operates directly on a person's mind", "module": "FORGERY", "elementId": "S463" },
+        { "label": "Criminal Breach of Trust (S.405) vs Theft (S.378): lawful possession vs unlawful taking", "sub": "CBT starts with lawful custody; theft starts with taking what was never in your custody", "module": "MISAPPROP", "elementId": "S405" },
+        { "label": "Criminal Intimidation (S.503) vs Extortion (S.383): threat vs threat to extract property", "sub": "Extortion uses threat specifically to extract property; intimidation's object is broader", "module": "INTIMIDATION", "elementId": "S503" },
+        { "label": "Instigation vs Conspiracy as abetment modes: active incitement vs passive agreement", "sub": "Instigation = goading to the specific act; Conspiracy = shared illegal agreement", "module": "ABETMENT", "elementId": "Ins" },
+        { "label": "Isqat-i-Haml with consent vs without consent: same act, opposite moral position", "sub": "Consent transforms the character of the offence, the punishment, and the Qisas eligibility", "module": "ISQAT", "elementId": "S338A" },
+        { "label": "S.499 Defamation: truth alone vs truth for public good — not the same defence", "sub": "Truth without public good purpose does not satisfy Exception 1; a critical distinction", "module": "DEFAMATION", "elementId": "S499" }
+      ]
+    },
+    {
+      "id": "CASCADE",
+      "title": "Cascade / Waterfall",
+      "icon": "⛲",
+      "color": "#1a4a6e",
+      "desc": "A fires, which automatically produces B as a legal consequence, which then produces C. Not a gate you choose to pass — a chain that fires automatically.",
+      "entries": [
+        { "label": "Qatl-i-Amd → Qisas right vests → Wali decides → S.311 State override may apply", "sub": "Four automatic steps; each triggered by the outcome of the previous — a complete cascade", "module": "QATLCORE", "elementId": "S306_307" },
+        { "label": "Abetment mode established → S.109 punishment attaches → extension rules S.110–S.120 fire", "sub": "Establishing any mode triggers the extension chain automatically based on what happens next", "module": "ABETMENT", "elementId": "S110" },
+        { "label": "Unlawful assembly formed → offence committed in prosecution → S.149 liability fires for all members", "sub": "Every member is swept in automatically once the assembly and disjunctive trigger are established", "module": "COMMONOBJ", "elementId": "CO_Rule" },
+        { "label": "Dacoity committed → murder occurs during it → S.396 liability waterfalls to all five+ participants", "sub": "The dacoity activates a cascade that makes all participants liable for any killing by any one", "module": "ROBBERY", "elementId": "S392" },
+        { "label": "Criminal Conspiracy formed → object offence committed → S.120-B punishment cascades from that offence", "sub": "The conspiracy liability level is automatically determined by the object offence's punishment", "module": "CC", "elementId": "Agr" },
+        { "label": "Theft + force at same time → robbery triggered → if five or more → dacoity automatically", "sub": "Two cascades in sequence: theft+force=robbery is automatic; robbery×5 persons=dacoity is automatic", "module": "ROBBERY", "elementId": "T∨E" },
+        { "label": "Qisas waived by wali → S.311 Fasad-fil-Arz may activate → State imprisonment cascades in", "sub": "The waiver triggers a secondary regime automatically — Fasad-fil-Arz is the cascade response to waiver", "module": "QATLCORE", "elementId": "S312_314" },
+        { "label": "Attempt fails → S.511 automatically triggers → half-sentence from the target offence cascades", "sub": "No separate charge needed; S.511 cascades from the incomplete attempt automatically", "module": "STAGES", "elementId": "St4" }
+      ]
+    },
+    {
+      "id": "PARENT",
+      "title": "Parent-Child Hierarchy",
+      "icon": "🌳",
+      "color": "#5c3a00",
+      "desc": "One section defines the concept (Parent); multiple sections elaborate variants (Children). Children inherit the parent's vocabulary and cannot exist without it.",
+      "entries": [
+        { "label": "S.299 (Parent) → S.302 Amd / S.316 Shibh-i-Amd / S.319 Khata / S.322 Bis-Sabab (Children)", "sub": "Four qatl varieties share one definitional parent; all children inherit S.299 vocabulary", "module": "QATLCORE", "elementId": "S301" },
+        { "label": "S.391 Dacoity (Parent) → S.395–S.402 all punishment and variant children", "sub": "Eight children depend on S.391's definition; none can be charged without the parent being made out", "module": "ROBBERY", "elementId": "¬Ex" },
+        { "label": "S.463 Forgery (Parent) → S.465–S.477-A all aggravated forms (Children)", "sub": "Every forgery offence inherits from S.464's false document test — the root of the family tree", "module": "FORGERY", "elementId": "S463" },
+        { "label": "S.425 Mischief (Parent) → S.426–S.440 all fifteen mischief variants (Children)", "sub": "Fifteen children all elaborate S.425's foundational definition in different factual matrices", "module": "MISCHIEF", "elementId": "S425" },
+        { "label": "S.107 Abetment modes (Parent) → S.108A, S.109–S.120 all extensions (Children)", "sub": "The three modes define what abetment is; all extensions below them depend on that foundation", "module": "ABETMENT", "elementId": "Ins" },
+        { "label": "S.339 Wrongful Restraint (Parent) → S.341–S.348 punishment variants (Children)", "sub": "Base restraint and confinement are the parents; aggravated duration and purpose are children", "module": "WRESTRAINT", "elementId": "WRest" },
+        { "label": "S.349 Force (Grandparent) → S.350 Criminal Force (Parent) → S.351 Assault (Child)", "sub": "A three-generation hierarchy: each level adds one element to the previous definition", "module": "FORCEASSAULT", "elementId": "S349" },
+        { "label": "S.378 Theft (Parent) → S.379 punishment / S.380 in building / S.381 by servant / S.382 with preparation", "sub": "Four children each add one aggravating circumstance to the parent theft definition", "module": "MISAPPROP", "elementId": "S403" },
+        { "label": "S.383 Extortion (Parent) → S.384–S.389 all variants and aggravated forms (Children)", "sub": "Six children elaborate the base extortion definition with escalating fear and threat scenarios", "module": "EXTORTION", "elementId": "S383" },
+        { "label": "S.141 Unlawful Assembly (Parent) → S.142–S.160 all public tranquillity children", "sub": "Every offence in the Public Tranquillity chapter depends on S.141's foundational definition", "module": "TRANQUILLITY", "elementId": "S141_142" },
+        { "label": "S.415 Cheating (Parent) → S.417 (personation) / S.418 (duty) / S.419 / S.420 (inducing delivery)", "sub": "Four children each specifying a variant; all inherit the deception element from S.415", "module": "CHEATING", "elementId": "S415" }
+      ]
+    },
+    {
+      "id": "NEST",
+      "title": "Nesting",
+      "icon": "🪆",
+      "color": "#3a5c3a",
+      "desc": "Definitions within definitions within definitions. Vertical depth — to understand A you must first unwrap B, which requires C, which requires D.",
+      "entries": [
+        { "label": "S.378 Theft: 'dishonestly' → S.24 → S.23 gain/loss — three definitional levels deep", "sub": "One word in the theft section imports a stack of definitions below the surface", "module": "MISAPPROP", "elementId": "S403" },
+        { "label": "S.300 Murder: S.300 → S.299 → S.39 voluntarily → S.23 gain/loss — four levels deep", "sub": "Each level unwraps a further definition; the deepest nesting in the property-adjacent chain", "module": "MURDER", "elementId": "Niyyat" },
+        { "label": "S.149 Common Object: S.149 → S.141 → five common objects → each defined elsewhere", "sub": "S.149 is a two-line section that imports two full definitional layers beneath it", "module": "COMMONOBJ", "elementId": "CO_Gate" },
+        { "label": "S.390 Robbery → S.378 Theft → 'dishonestly' → S.24 → S.23 — five levels deep", "sub": "Robbery is the shallowest entry; the deepest nest to understand it runs five definitions down", "module": "ROBBERY", "elementId": "T∨E" },
+        { "label": "S.463 Forgery: 'false document' → S.464 definition → 'fraudulently' → S.25 — nested layers", "sub": "The forgery section's key terms each unpack into further definitions in adjacent sections", "module": "FORGERY", "elementId": "S465" },
+        { "label": "S.34 CI: 'common intention' → S.39 voluntarily → S.23 gain/loss — definitions nest downward", "sub": "Three words in S.34 import a chain of definitions from the General Explanations chapter", "module": "CI", "elementId": "CI" },
+        { "label": "GE S.84 Unsound Mind: 'unsound mind' imports psychiatric concepts not defined in the Code", "sub": "The deepest nest in the Code: the definition points outside the statute entirely", "module": "GE", "elementId": "¬UM" },
+        { "label": "S.6 Reading Rules: the topmost shell — every offence nests within S.6's framework", "sub": "S.6 is the outer wrapper that holds everything; it is the parent nest of the entire Code", "module": "GEXPL", "elementId": "¬S6_37_38STRUCT" }
+      ]
+    },
+    {
+      "id": "ESCALATION",
+      "title": "Escalation Ladder",
+      "icon": "📶",
+      "color": "#6e2a1a",
+      "desc": "Sections arranged in ascending severity. Each rung adds exactly one aggravating circumstance to the rung below. Knowing the ladder tells you where any fact pattern sits.",
+      "entries": [
+        { "label": "Wrongful Confinement ladder: S.342 → S.343 (3+ days) → S.344 (10+ days) → S.347 (to extort) → S.348 (to confess)", "sub": "Five rungs; each rung adds one aggravating element (duration, purpose) to the previous", "module": "WRESTRAINT", "elementId": "WConf" },
+        { "label": "Assault ladder: S.352 (base) → S.353 (vs public servant) → S.354 (vs woman modesty) → S.354-A (stripping)", "sub": "Victim identity and degree of violation determine the rung; each adds punishment", "module": "FORCEASSAULT", "elementId": "S352_355" },
+        { "label": "Robbery/Dacoity ladder: S.392 (robbery) → S.395 (dacoity) → S.397 (deadly weapon) → S.396 (murder in dacoity)", "sub": "Headcount, then armament, then lethality — three aggravating rungs above the base", "module": "ROBBERY", "elementId": "S392" },
+        { "label": "Mischief ladder: S.426 (base) → S.427 (Rs.50+ damage) → S.435 (by fire) → S.436 (intent to destroy house)", "sub": "Value of damage, then method, then target escalate across the chapter", "module": "MISCHIEF", "elementId": "S426_427" },
+        { "label": "Kidnapping ladder: S.363 (base) → S.364 (to murder) → S.365-A (extortion) → S.364-A (under-14 victim)", "sub": "Purpose and victim vulnerability are the rungs; each multiplies the exposure", "module": "KIDNAP", "elementId": "S363" },
+        { "label": "House trespass ladder: S.447 → S.448 (house) → S.449/450 (for capital/life offence) → S.452 (after preparation for hurt)", "sub": "Location, then purpose, then preparation for violence escalate the charge", "module": "TRESPASS", "elementId": "S447" },
+        { "label": "Lurking trespass ladder: S.453 (lurking) → S.456 (by night) → S.459 (hurt during) → S.460 (qatl during)", "sub": "Concealment, then timing, then harm escalate to the maximum lurking trespass exposure", "module": "TRESPASS", "elementId": "S453_455" },
+        { "label": "Forgery ladder: S.465 (base) → S.466 (court records) → S.467 (valuable security) → S.468 (for cheating)", "sub": "The target of the forgery and its purpose determine the rung", "module": "FORGERY", "elementId": "S466_467" },
+        { "label": "Extortion ladder: S.384 (base) → S.386 (fear of death/GH) → S.388 (accusation of serious offence)", "sub": "The nature of the threat escalates; each rung increases the fear threshold required", "module": "EXTORTION", "elementId": "S385_387" },
+        { "label": "Abetment ladder: S.116 (imprisonment offence not committed) → S.115 (death/life offence not committed) → S.118 (offence committed)", "sub": "The gravity of the abetted offence and whether it was committed are the two rungs", "module": "ABETMENT", "elementId": "s115a" }
+      ]
+    },
+    {
+      "id": "ICEBERG",
+      "title": "Iceberg",
+      "icon": "🧊",
+      "color": "#1a3a5c",
+      "desc": "Small visible statutory text; enormous hidden content beneath. The most important provisions in the Code are often the shortest on the surface.",
+      "entries": [
+        { "label": "S.6: two lines of text that silently import the entire General Exceptions chapter (30 sections)", "sub": "The smallest section with the largest mass — every offence is subject to S.76–106 without being told so", "module": "GEXPL", "elementId": "¬S6_37_38STRUCT" },
+        { "label": "'Dishonestly' in S.378 Theft: one word importing S.24 → S.23 and the entire property mental element framework", "sub": "The mass beneath this single word is larger than most full sections in the Code", "module": "GEXPL", "elementId": "¬S2425DF" },
+        { "label": "S.149: two sentences importing S.141's entire five-object framework and decades of case law", "sub": "The tip is visible; the mass is unlawful assembly doctrine, headcount disputes, and common object jurisprudence", "module": "COMMONOBJ", "elementId": "CO_Rule" },
+        { "label": "'Public servant' in any offence: S.21's elaborate 12-category definition beneath every mention", "sub": "Every time 'public servant' appears, S.21's twelve categories travel with it invisibly", "module": "GEXPL", "elementId": "¬S21PS" },
+        { "label": "S.107 'abets': the entire abetment architecture hidden beneath one five-letter word", "sub": "One word used throughout the Code; every use carries the three-mode definition invisibly", "module": "ABETMENT", "elementId": "Ins" },
+        { "label": "S.511 Attempt: one section that implicitly references every imprisonable offence in the Code", "sub": "The smallest provision with the widest reach — it applies across the entire Code silently", "module": "STAGES", "elementId": "St4" },
+        { "label": "'Good faith' in GE exceptions: S.52's definition beneath every General Exception that uses the phrase", "sub": "Seven GE exceptions import S.52 without saying so; good faith jurisprudence is the hidden mass", "module": "GEXPL", "elementId": "¬S52GF" },
+        { "label": "S.99 Private Defence limits: four limitations are beneath every private defence claim", "sub": "S.96 gives the right; S.99 is the iceberg that qualifies it — most litigated, least visible", "module": "GE", "elementId": "¬PDLimit" },
+        { "label": "S.34 'common intention': three words importing the entire prior-concert jurisprudence", "sub": "Mahbub Shah 1945 and generations of case law are beneath those three words", "module": "CI", "elementId": "CI" }
+      ]
+    },
+    {
+      "id": "LAYER",
+      "title": "Layering",
+      "icon": "🧅",
+      "color": "#4a4a1a",
+      "desc": "Multiple legal frameworks applying simultaneously to the same act. Unlike Islamization Overlay (a historical event), Layering is the general structural technique.",
+      "entries": [
+        { "label": "Qatl-i-Amd: Qisas layer (private right of heirs) + Ta'zir layer (State power) simultaneously", "sub": "Two complete punishment regimes on one conviction; the wali's decision determines which activates", "module": "MURDER", "elementId": "cl2" },
+        { "label": "S.311 Fasad-fil-Arz: PPC private law layer + Islamic public interest doctrine layer on same case", "sub": "The private settlement layer (Qisas waived) and the public law layer (State override) coexist", "module": "QATLCORE", "elementId": "S312_314" },
+        { "label": "S.34 CI and S.149 CO: both can be charged simultaneously against the same accused on same facts", "sub": "Prosecution layers two constructive liability frameworks; defence must defeat both", "module": "CI", "elementId": "CI" },
+        { "label": "S.109 Abetment and S.120-B Conspiracy: both frameworks can apply to the same conduct simultaneously", "sub": "An accused who abetted through a conspiracy faces both layers independently", "module": "ABETMENT", "elementId": "Cons" },
+        { "label": "PPC + PECA 2016: two statutory layers applying simultaneously to the same digital act", "sub": "Cybercrime carries the PPC base layer (cheating, forgery, defamation) plus PECA's enhanced regime", "module": "CHEATING", "elementId": "S420" },
+        { "label": "Anti-Terrorism Act + PPC: ATA adds a terror-schedule layer on top of any underlying PPC offence", "sub": "The same murder can be simultaneously a PPC S.302 and an ATA offence — two court jurisdictions may apply", "module": "MURDER", "elementId": "QA" },
+        { "label": "Blasphemy S.295-C: PPC criminal layer + Constitutional Article 19/20 rights layer in tension", "sub": "The criminal prohibition and the constitutional right to religion operate simultaneously", "module": "BLASPHEMY", "elementId": "Act295" },
+        { "label": "Diyat compensation layer + Ta'zir imprisonment layer can both attach to the same Qatl-i-Khata", "sub": "Civil compensation (Diyat) and State punishment (Ta'zir) are independent layers on one negligent act", "module": "QATLCORE", "elementId": "S321_322" }
+      ]
+    },
+    {
+      "id": "ISLAMIZ",
+      "title": "Islamization Overlay",
+      "icon": "🕸",
+      "color": "#7a4f1e",
+      "desc": "Where 1979–1990 changed what 1860 built. The Code's original common-law skeleton carries Islamic-law grafts. This map shows every seam.",
+      "entries": [
+        { "label": "S.53 Punishment list: Qisas / Diyat / Arsh / Daman added alongside Death and Imprisonment", "sub": "The most visible seam — two vocabularies from two legal universes now share one list", "module": "PUNISH", "elementId": "¬S53PUN" },
+        { "label": "S.299–S.338H: entire Qatl and Hurt framework replaced the 1860 provisions from scratch in 1990", "sub": "The Qisas and Diyat Ordinance deleted and substituted the entire Chapter XVI", "module": "QATLCORE", "elementId": "S301" },
+        { "label": "Wali concept: right of Qisas held by heirs of victim — not the State", "sub": "1860's State-as-prosecutor model replaced by a private family right; a fundamental architectural shift", "module": "QATLCORE", "elementId": "S306_307" },
+        { "label": "S.311 Fasad-fil-Arz: State override mechanism inserted to re-capture cases heirs might waive", "sub": "A patch on the Qisas architecture — the State can still punish even if the wali forgives", "module": "QATLCORE", "elementId": "S312_314" },
+        { "label": "Hurt chapter: Shajjah / Jurh / Jaifah / Arsh vocabulary inserted 1990", "sub": "Classical Arabic wound taxonomy now governs injury law where English hurt categories once did", "module": "HURTCORE", "elementId": "S337A" },
+        { "label": "Isqat-i-Haml and Isqat-i-Janin: Islamic miscarriage provisions replaced 1860 original", "sub": "Organ formation (120 days) as the legal threshold — a classical fiqh concept, not common law", "module": "ISQAT", "elementId": "S338" },
+        { "label": "S.295-B and S.295-C Blasphemy: inserted by Zia in 1982 and 1986 — not in the 1860 Code", "sub": "The original S.295 protected all religions equally; these provisions asymmetrically protect one", "module": "BLASPHEMY", "elementId": "Act295" },
+        { "label": "S.498A Fornication: inserted 1979 as part of Hudood Ordinances", "sub": "The 1860 S.497 Adultery was a different offence; S.498A added an entirely new category", "module": "MARRIAGE", "elementId": "S498A" },
+        { "label": "The Silence broken: Macaulay's deliberate moral neutrality ended by Zia's amendments", "sub": "The Code never said why acts are wrong — 1979 grafted Islamic moral justification onto specific chapters", "module": "THEORIES", "elementId": "Evo" },
+        { "label": "S.53 seam in full: two lineages share one punishment list — the most visible structural overlay", "sub": "Read alongside Rabbit Hole essays RH1 (Two Lineages) and RH10 (The Silence in the Law)", "module": "PUNISH", "elementId": "¬S53PUN" }
+      ]
+    },
+    {
+      "id": "ARC",
+      "title": "Cross-Chapter Arc",
+      "icon": "➡",
+      "color": "#2c4a6e",
+      "desc": "A concept threading across multiple chapters. Follow the arc to see how one idea transforms as it moves through the Code.",
+      "entries": [
+        { "label": "Mens rea arc: S.39 voluntarily → S.24/25 dishonestly/fraudulently → S.299 niyyat → S.415 deception", "sub": "The mental element vocabulary from General Explanations threads through every major offence chapter", "module": "GEXPL", "elementId": "¬S39VOL" },
+        { "label": "Consent arc: GE S.87–S.92 → S.375 Rape → S.493A–S.498C Marriage offences", "sub": "Consent vitiates or enables; its definition shifts depending on the chapter context", "module": "GE", "elementId": "¬Con87" },
+        { "label": "Harm escalation arc: Restraint → Force/Assault → Hurt → Qatl (four ascending chapters)", "sub": "Each chapter builds on the harm concept of the one before; the arc traces the law of violence", "module": "WRESTRAINT", "elementId": "WRest" },
+        { "label": "Public servant arc: S.21 definition → S.121–S.130 State offences → S.409 CBT by public servant", "sub": "The public servant's special status creates heightened liability across three separate chapters", "module": "GEXPL", "elementId": "¬S21PS" },
+        { "label": "Property dishonesty arc: Misappropriation → Receiving → Cheating → Fraudulent Deeds", "sub": "Four chapters covering the full spectrum of property offences rooted in dishonesty", "module": "MISAPPROP", "elementId": "S403" },
+        { "label": "Document integrity arc: Forgery → Trade Marks → Currency Notes (three chapters ascending)", "sub": "Three chapters on document/mark falsification in ascending institutional importance", "module": "FORGERY", "elementId": "S463" },
+        { "label": "Reform arc: Theories of Punishment → Punishment chapter → Qatl framework → Islamization essays", "sub": "How the 1860 punishment architecture was overlaid by the 1979–1990 Islamization wave", "module": "THEORIES", "elementId": "Evo" },
+        { "label": "Good faith arc: S.52 defined in GEXPL → S.88–S.95 GE exceptions → Defamation exceptions", "sub": "Good faith is a universal gatekeeper that threads through exceptions across three chapters", "module": "GEXPL", "elementId": "¬S52GF" },
+        { "label": "Stages arc: Intention → Preparation (S.399) → Attempt (S.511) → Commission (across all chapters)", "sub": "The law's intervention points trace an arc from mental state to completed harm", "module": "STAGES", "elementId": "St1" },
+        { "label": "Abetment arc: S.107 modes → S.108A jurisdiction → S.109–S.120 punishment extensions", "sub": "Abetment begins with three modes and fans out into eighteen distinct punishment scenarios", "module": "ABETMENT", "elementId": "Ins" },
+        { "label": "Group liability arc: S.34 CI (2+) → S.120-A Conspiracy (2+) → S.141 Assembly (5+) → S.149 CO (5+)", "sub": "Four group liability provisions in ascending headcount and decreasing prior-concert requirement", "module": "CI", "elementId": "CI" }
+      ]
+    },
+    {
+      "id": "ITER",
+      "title": "Iterations",
+      "icon": "🔁",
+      "color": "#2a4a3a",
+      "desc": "The same legal structure repeated with incremental variations. Find the variable that changes between iterations and you have found the decision point.",
+      "entries": [
+        { "label": "S.115(1) and S.115(2): same abetment structure — variable is whether harm actually resulted", "sub": "Two rows, one structure; the variable is the downstream consequence of the abetted act", "module": "ABETMENT", "elementId": "s115a" },
+        { "label": "S.116(1) and S.116(2): same non-commission structure — variable is whether abettor is a public servant", "sub": "The public servant iteration always carries a higher sentence; one variable, one rung up", "module": "ABETMENT", "elementId": "s115b" },
+        { "label": "S.337-A(i)–(vi): Shajjah wound classification — six iterations of the same structure", "sub": "Depth of penetration and structural damage are the variables across six head/face wound rungs", "module": "HURTCORE", "elementId": "S337A" },
+        { "label": "S.337-F(i)–(vi): Jurh body wound classification — six iterations of the same structure", "sub": "The same wound classification logic iterated six times for body wounds below the neck", "module": "HURTCORE", "elementId": "S337F" },
+        { "label": "S.499 Exceptions 1–10: same exception structure iterated ten times — variable is the justification", "sub": "Ten rows, one logical template; find which exception applies by finding which variable fits", "module": "DEFAMATION", "elementId": "S499_Exc1to3" },
+        { "label": "S.506(1) and S.506(2): criminal intimidation iterated — variable is gravity of the threat", "sub": "Base intimidation vs threat of death/grievous hurt; one variable separates the two rows", "module": "INTIMIDATION", "elementId": "S506_507" },
+        { "label": "S.176(1)(2)(3): same omission-to-notify structure iterated — variable is type of required notice", "sub": "Three rows, same omission template; the nature of the legal obligation is the variable", "module": "INTIMIDATION", "elementId": "S504" },
+        { "label": "S.174(1)(2)(3): same non-attendance structure iterated — variable is type of required attendance", "sub": "General summons / court summons / S.87 CrPC proclamation — same failure, three contexts", "module": "INTIMIDATION", "elementId": "S504" },
+        { "label": "S.337-H(i) and (ii): hurt by rash/negligent act iterated — variable is degree of danger caused", "sub": "Same rash/negligent act structure; the variable is whether it endangered life or caused specific hurt", "module": "HURTCORE", "elementId": "S337M" },
+        { "label": "S.388 and S.388(2): extortion by accusation iterated — variable is nature of the offence threatened", "sub": "Same threat structure; the variable is whether the threatened accusation is an unnatural offence", "module": "EXTORTION", "elementId": "S388_389" }
+      ]
+    },
+    {
+      "id": "XREF",
+      "title": "Structural Cross-Reference",
+      "icon": "🔗",
+      "color": "#1a3a5c",
+      "desc": "Sections explicitly defined in terms of another section in the statute. Section B cannot be read without Section A.",
+      "entries": [
+        { "label": "S.149 explicitly names S.141: the section imports unlawful assembly by direct statutory reference", "sub": "S.149 is two sentences built entirely on S.141 — the cross-reference is on the face of the text", "module": "COMMONOBJ", "elementId": "CO_Gate" },
+        { "label": "S.390 Robbery explicitly defined in terms of S.378 Theft and S.383 Extortion", "sub": "Robbery is statutory shorthand for (theft or extortion) + force/fear; neither root can be read alone", "module": "ROBBERY", "elementId": "rl1" },
+        { "label": "S.120-A Criminal Conspiracy cross-references S.43 (illegal act) in the agreement element", "sub": "The object of the conspiracy must be 'illegal' as defined in S.43 — a direct textual bridge", "module": "CC", "elementId": "Ill" },
+        { "label": "S.300 Murder refers back to S.299 Qatl definitions throughout its four clauses explicitly", "sub": "S.300 cannot be read without S.299's vocabulary — the cross-reference is structural, not implied", "module": "MURDER", "elementId": "Niyyat" },
+        { "label": "S.511 Attempt: carries no punishment of its own — always refers to another section for the sentence", "sub": "Every S.511 charge explicitly cross-references the completed offence to calculate the sentence", "module": "STAGES", "elementId": "St4" },
+        { "label": "Private defence limits (S.99) explicitly cross-reference S.100–S.106 for scope and occasions", "sub": "S.99 states what you cannot do; S.100–106 state when you can — they must be read as one block", "module": "GE", "elementId": "¬PDLimit" },
+        { "label": "S.338 Isqat-i-Haml cross-references S.338A–C for all its sub-definitions explicitly", "sub": "S.338 names and incorporates S.338A-C; all four sections form one inseparable cross-referenced unit", "module": "ISQAT", "elementId": "S338" },
+        { "label": "S.311 Fasad-fil-Arz explicitly cross-references S.302 as its operating condition", "sub": "S.311 only operates where S.302 has been established and then waived — the cross-reference is the trigger", "module": "QATLCORE", "elementId": "S312_314" },
+        { "label": "S.6 reading rules cross-reference all General Exceptions as silently incorporated in every offence", "sub": "Every offence definition is automatically subject to S.76–106 by virtue of S.6 alone — universal cross-ref", "module": "GEXPL", "elementId": "¬S6_37_38STRUCT" },
+        { "label": "S.108A Abetment jurisdiction cross-references S.107 as its operating condition", "sub": "S.108A extends territorial jurisdiction but only where S.107 abetment is already established", "module": "ABETMENT", "elementId": "S108A" },
+        { "label": "S.391 Dacoity explicitly cross-references S.390 Robbery as its foundation", "sub": "Dacoity is defined as robbery committed by five or more — S.390 is the explicit baseline", "module": "ROBBERY", "elementId": "¬Ex" }
+      ]
+    }
+  ]
+}
